@@ -1,0 +1,183 @@
+.main-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/images/hero.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    @media only screen and (max-width: 991px){
+        height: 150vh;
+    }
+    @media only screen and (max-width: 761px){
+        height: 170vh;
+    }
+    @media only screen and (max-width: 400px){
+        height: 157vh;
+    }
+
+
+    &::after{
+        content: "";
+        background-color: #1c406ac7;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+    .container{
+        z-index: 10;
+        color: white;
+    }
+    h2{
+        color: white;
+        font-weight: 600;
+        z-index: 10;
+    }
+
+    .labels{
+        z-index: 10;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        color: white;
+        
+
+    }
+
+
+    .abs-sec{
+        margin-top: 80px;
+
+        @media only screen and (max-width: 991px){
+        margin-top: 5px;
+        }
+        .abd-q{
+            text-align: start;
+            color: white;
+            border-left: 3px solid white;
+            margin-top: 120px;
+            padding: 25px 100px 25px 25px;
+            
+            // @media only screen and (max-width: 1200px){
+            //     padding: 25px;
+            //     margin-top: 245px;
+            //     margin-bottom: 50px;
+            // }
+            @media only screen and (max-width: 991px){
+                padding: 25px;
+                margin-top: 20px;
+                margin-bottom: 50px;
+                // background-color: red;
+            }
+            h1{
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            p{
+                color: white;
+                font-weight: 600;
+            }
+            a{
+                color: #f5d76e;
+                text-decoration: none;
+                font-weight: 600;
+                letter-spacing: 1px;
+                transition: 0.2s ease;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+        h2{
+            color: #254e71;
+            text-align: start;
+            font-size: 34px;
+            color: #2f4e71;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0;
+            margin: 0 0 10px;
+        }
+        h5{
+            color: #333850;
+            font-size: 15px;
+            font-weight: 600;
+            text-align: start;
+        }
+        form{
+            background-color: #f5d76e;
+            width: 100%;
+            height: auto;
+            padding: 40px;
+            // position: absolute;
+            // right: 9%;
+            // top: 22%;
+            // z-index: 999;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            input, select, textarea{
+                width: 100%;
+                margin: 8px auto;
+                padding: 10px 8px;
+                border: 0;
+                border-radius: 3px;
+                outline: 0;
+                box-shadow: 2px 2px 2px #254d7123;
+            }
+            textarea{
+                min-height: 100px;
+            }
+            option{
+                background-color: white;
+                color: #333850;
+            }
+            button{
+                background-color: #254e71;
+                color: white;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                width: 100%;
+                margin: 8px auto;
+                padding: 12px 8px;
+                border: 0;
+                border-radius: 3px;
+                outline: 0;
+                box-shadow: 2px 2px 2px #254d7123;
+                
+            }
+        }
+}
+ 
+}
+
+
+/* RTL styles */
+body[dir="rtl"] {
+    text-align: right; /* Ensure text alignment is to the right */
+    direction: rtl; /* Set the body to RTL */
+  
+  
+    /* Additional RTL styles for specific components */
+    .main-sec {
+      text-align: right; /* Align text in the main section to the right */
+    }
+  
+    .main-sec .abs-sec .abd-q {
+      border-left: none !important;
+      border-right: 3px solid white !important;
+      padding: 25px 25px 25px 100px !important;
+    }
+    /* You can add other component-specific RTL styles here */
+  }

@@ -1,0 +1,54 @@
+body{
+  width: 100% !important;
+  margin: 0 !important;
+  font-family: ui-monospace;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #161616;
+  background-color: #fafafb;
+}
+
+.mainBtn{
+  padding: 15px 30px;
+  margin-top: 20px;
+  background-color: #333850;
+  border-color: #333850;
+  border-radius: 5px;
+  color: white;
+  transition: 0.4s ease;
+  &:hover{
+    background-color: transparent;
+    color: #333850;
+    border-color: #333850;
+  }
+}
+
+
+/* RTL styles */
+body[dir="rtl"] {
+  text-align: right; /* Ensure text alignment is to the right */
+  direction: rtl; /* Set the body to RTL */
+
+  .container {
+    direction: rtl; /* Ensure containers follow RTL */
+  }
+
+  .navbar {
+    float: left !important; /* Navbar aligns to the right in RTL */
+  }
+
+  /* Additional RTL styles for specific components */
+  .main-sec {
+    text-align: right; /* Align text in the main section to the right */
+  }
+
+  .main-sec .abs-sec .abd-q {
+    border-left: none !important;
+    border-right: 3px solid white !important;
+    padding: 25px 25px 25px 100px !important;
+  }
+  
+  .Features .right .boxes .box .icon{
+    margin-left: 20px !important;
+  }
+  /* You can add other component-specific RTL styles here */
+}

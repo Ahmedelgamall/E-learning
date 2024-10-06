@@ -1,0 +1,27 @@
+.course-page{
+    background-color: #405D72;
+    margin: 0 auto 50px auto;
+    padding: 150px 10px;
+
+    .header{
+        margin: 30px auto;
+        text-align: center;
+
+        h2{
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+        .cont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            p{
+                margin: 0 10px !important;
+                font-weight: 300;
+            }
+        }    
+    }
+}

@@ -1,0 +1,177 @@
+.CourseCard{
+    width: 100%;
+    // height: 450px;
+    border: 1px solid rgba(48,146,85,0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    transition: 0.5s ease;
+
+    &:hover{
+        border-color: #f5d76e;
+        outline: #f5d76e 0.5px solid;
+    }
+    
+
+    .card-link{
+        text-decoration: none;
+    }
+
+    .link{
+        text-decoration: none;
+    }
+
+
+    img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+    .instructor-link{
+        color: #405D72 !important;
+        cursor: pointer !important;
+        font-size: 40px !important;
+    }
+
+    .course-author{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // @media only screen and (max-width: 540px) {
+        //     display: unset;
+        // }
+        .instructor{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 5px;
+
+            img{
+                width: 50px;
+                height: 50px;
+                margin: 0;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            .instructor-name{
+                color: #52565b;
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                margin-left: 10px;
+            }
+        }
+
+        .course-category{
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+            background-color: #f5d76e;
+            border-radius: 5px;
+            font-size: 14px;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            padding: 0 10px;
+        }
+    }
+
+    .course-name{
+        font-size: 16px;
+        font-weight: 500;
+        color: #212832;
+        margin-top: 13px;
+        display: inline-block;
+        line-height: 1.4;
+    }
+
+
+    .course-nums{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .lec-num{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            .icon{
+                color: #405D72;
+                margin-right: 5px;
+                font-size: 20px;
+                display: inline-block;
+                line-height: 1;
+            }
+            span{
+                font-size: 14px;
+                font-weight: 400;
+                color: #405D72;
+                display: inline-block;
+                line-height: 1;
+            }
+            .instructor-name{
+                color: #52565b;
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                margin-left: 10px;
+            }
+        }
+
+        .course-category{
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+            background-color: #f5d76e;
+            border-radius: 5px;
+            font-size: 14px;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            padding: 0 10px;
+        }
+    }
+
+
+    .courses-price-review{
+        background-color: #405D72;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 10px;
+        // display: -webkit-box;
+        // display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 20px;
+
+        .price{
+            color: #f5d76e;
+        }
+
+        .starIcon{
+            color: #f5d76e;
+        }
+    }
+    
+
+}
+
+.instructor-link {
+    pointer-events: visible;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .instructor-link:hover {
+    text-decoration: underline;
+  }

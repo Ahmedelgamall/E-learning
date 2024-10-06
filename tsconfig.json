@@ -2,8 +2,8 @@
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
+    "skipLibCheck": true,  //Changed
+    "strict": false, //Changed
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/pages/product/[id].tsx"],
   "exclude": ["node_modules"]
 }

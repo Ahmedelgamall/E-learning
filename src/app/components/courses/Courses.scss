@@ -1,0 +1,106 @@
+.all-courses{
+    // background-color: #f5d76e;
+    margin-top: 70px;
+    padding: 40px 0;
+
+    .header{
+        // display: flex;
+        // justify-content: center;
+        height: 85px;
+        h2{
+            color: #333850;
+            font-weight: 600;
+            span{
+                color: #f5d76e;
+                margin-left: 10px;
+                border-bottom: #f5d76e solid 3px;
+                padding: 10px 5px;
+            }
+        }
+
+        .courses-search{
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        form{
+            height: 100%;
+            position: unset;
+            input{
+                height: 47px;
+                width: 100%;
+                border: 1px solid #f5d76e;
+                border-radius: 10px;
+                padding: 0 30px;
+                padding-right: 90px;
+                outline: none;
+                -webkit-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s;
+                position: relative;
+            }
+            button{
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                right: 4px;
+                line-height: 54px;
+                text-align: center;
+                border-radius: 10px;
+                background-color: #f5d76e;
+                border: 0;
+                margin-top: 3.5px;
+                justify-content: center;
+                padding: 12px;
+            
+                
+                .icon{
+                    font-size: 16px;
+                    color: #333850;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+            }
+        }
+    }
+
+    .no-found{
+        color: #f5d76e;
+        background-color: #333850;
+        font-size: 38px;
+        font-weight: 600;
+        padding: 40px 20px;
+        border-radius: 5px;
+        margin: 100px auto;
+        text-align: center;
+        width: 50%;
+    }
+}
+.tabs-container {
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  
+    &.active {
+      border-bottom: 2px solid #f5d76e;
+      color: #f5d76e;
+    }
+    
+    &:hover {
+      color: #f5d76e;
+    }
+  }

@@ -1,95 +1,39 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fontsource/roboto'; // Import the font
+import '../app/styles/componentsStyle.scss';
+import MainSec from './components/mainsec/MainSec';
+import Courses from './components/courses/Courses';
+import Features from './components/Features/Features';
+import HowWork from './components/how-it-work/how-it-work';
+import Contact from './components/contact/contact';
+import Teachers from './components/teachers/teachers';
+import Link from "next/link";
+import './i18n'; // Import the i18n configuration
+import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+const Home = () => {
+    const { t, i18n } = useTranslation();
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+    // Function to change language
+    const changeLanguage = (lang) => {
+        console.log(`Changing language to: ${lang}`); // Debug log
+        i18n.changeLanguage(lang);
+    };
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+    return (
+        <main style={{ fontFamily: 'Roboto, sans-serif' }}>
+            <MainSec />
+            <Courses />
+            <Features />
+            <Teachers />
+            <HowWork />
+            <Contact />
+        </main>
+    );
+};
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
-}
+export default Home;
